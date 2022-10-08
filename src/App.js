@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Home from "./Home/Home";
 import Root from "./Layout/Root";
 
 function App() {
@@ -7,14 +8,18 @@ function App() {
     {
       path: "/",
       element: <Root></Root>,
+      loader: () =>
+        fetch(
+          "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=014c053402364c349f8036b0053329f7"
+        ),
       children: [
         {
           path: "/",
-          element: <div>This is Home</div>,
+          element: <Home></Home>,
         },
         {
           path: "/home",
-          element: <div>This is real Home</div>,
+          element: <Home></Home>,
         },
         {
           path: "/ourteam",
