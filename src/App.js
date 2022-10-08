@@ -10,7 +10,7 @@ function App() {
       element: <Root></Root>,
       loader: () =>
         fetch(
-          "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=014c053402364c349f8036b0053329f7"
+          "https://newsapi.org/v2/everything?q=tesla&from=2022-09-08&sortBy=publishedAt&apiKey=014c053402364c349f8036b0053329f7"
         ),
       children: [
         {
