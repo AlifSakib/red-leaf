@@ -5,7 +5,7 @@ const BreakingNews = ({ news }) => {
   const { author, title, urlToImage, publishedAt, url } = news;
   const date = new Date(publishedAt);
   return (
-    <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-8 lg:py-20 ">
+    <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-8 lg:py-20">
       <Link to="/" aria-label="View Item">
         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl brightness-25">
           <img

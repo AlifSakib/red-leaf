@@ -10,7 +10,7 @@ const Home = () => {
   const trendingNews = newsData.articles.slice(4, 10);
   return (
     <div className="w-9/12 mx-auto">
-      <div className="text-2xl text-start font-bold border-l-8 pl-4">
+      <div className="text-2xl text-start font-bold border-l-8 pl-4 mt-16">
         <h1>Editor's Pick This Week</h1>
       </div>
       {/* Breaking News  */}
@@ -24,14 +24,14 @@ const Home = () => {
         <div className="text-2xl text-start font-bold border-l-8 pl-4 my-6">
           <h1>Trending This Week</h1>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3">
           {trendingNews.map((trendNews, index) => (
             <TrendingNews key={index} trendNews={trendNews}></TrendingNews>
           ))}
         </div>
       </div>
       {/* Archive  */}
-      <div className=" flex mx-4 text-slate-800 rounded-lg justify-center items-center bg-red-500 h-56 px-4 mt-10">
+      <div className=" md:flex mx-4 text-slate-800 rounded-lg justify-center items-center bg-red-500 h-56 px-4 mt-10">
         <div className="w-1/2 text-start md:text-2xl lg:text-4xl">
           <p>
             Get Inspired to Achieve <br />

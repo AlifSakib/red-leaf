@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Root from "./Layout/Root";
+import OurTeam from "./OurTeam/OurTeam";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,11 +25,12 @@ function App() {
         },
         {
           path: "/ourteam",
-          element: <div>This is Our Team</div>,
+          loader: () => fetch("team-member.json"),
+          element: <OurTeam></OurTeam>,
         },
         {
           path: "/contact",
-          element: <div>This is real contact</div>,
+          element: <Contact></Contact>,
         },
       ],
     },

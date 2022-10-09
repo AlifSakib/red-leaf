@@ -9,17 +9,17 @@ const News = () => {
   const highLight3 = highlightNews[28];
 
   return (
-    <div className="grid grid-cols-12 mx-4 space-x-3 ">
-      <div className="space-y-4 col-span-7">
-        <div className="rounded-lg h-96 bg-slate-100  shadow-sm flex">
-          <div className="w-2/4 p-2">
+    <div className="grid lg:grid-cols-12 mx-4 space-x-3">
+      <div className="space-y-4 col-span-7 ">
+        <div className="rounded-lg  bg-slate-100  shadow-sm md:flex h-[500px] md:h-96">
+          <div className="md:w-2/4 p-2">
             <img
               className="h-full w-full object-cover rounded-lg"
               src={highLight1.urlToImage}
               alt=""
             />
           </div>
-          <div className="mx-6 mt-5 text-start w-2/4 overflow-hidden">
+          <div className="mx-6 mt-5 text-start md:w-2/4 overflow-hidden">
             <div className=" space-y-2">
               <p className="bg-violet-400 py-1 px-3 rounded-full w-fit">News</p>
             </div>
@@ -34,15 +34,15 @@ const News = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-lg h-96 bg-slate-100 shadow-sm flex">
-          <div className="w-2/4 p-2">
+        <div className="rounded-lg bg-slate-100 shadow-sm md:flex h-fit md:h-96">
+          <div className="md:w-2/4 p-2">
             <img
-              className="h-full w-full object-cover rounded-lg"
+              className="h-full md:w-full object-cover rounded-lg"
               src={highLight2.urlToImage}
               alt=""
             />
           </div>
-          <div className="mx-6 mt-5 text-start w-2/4 overflow-hidden">
+          <div className="mx-6 mt-5 text-start md:w-2/4 overflow-hidden">
             <div className=" space-y-2">
               <p className="bg-slate-400 py-1 px-3 rounded-full w-fit">News</p>
             </div>
@@ -59,7 +59,7 @@ const News = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-5">
+      <div className="col-span-5 hidden lg:block">
         <div className="rounded-lg h-full bg-slate-100 ">
           <div className="w-full p-2">
             <img
