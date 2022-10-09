@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import BreakingNews from "../BreakingNews/BreakingNews";
 import { NewsContext } from "../Layout/Root";
 import News from "../News/News";
+import NewsLetter from "../NewsLetter/NewsLetter";
 import TrendingNews from "../TrendingNews/TrendingNews";
 
 const Home = () => {
@@ -51,6 +52,9 @@ const Home = () => {
       </div>
       <div className=" mt-10">
         <News></News>
+      </div>
+      <div>
+        <NewsLetter></NewsLetter>
       </div>
     </div>
   );
