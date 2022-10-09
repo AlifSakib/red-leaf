@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Contact from "./Contact/Contact";
+import ErrorPage from "./ErrorPage/ErrorPage";
 import Home from "./Home/Home";
 import Root from "./Layout/Root";
 import OurTeam from "./OurTeam/OurTeam";
@@ -33,6 +34,10 @@ function App() {
           element: <Contact></Contact>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <ErrorPage></ErrorPage>,
     },
   ]);
   return (
